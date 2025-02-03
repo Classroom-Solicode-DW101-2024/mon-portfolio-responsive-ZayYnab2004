@@ -1,0 +1,410 @@
+body{
+    background-color: #B497BD;
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #B497BD;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #A2D5AB; 
+}
+section{
+    background-color:  #B497BD;
+    color: white;
+    margin-top: 30px;
+    margin-left:2%;
+
+} 
+section img{
+    border-radius: 50%;
+   margin-left: 65%;
+   margin-top: -50%;
+   
+}
+.icones {
+    width: 20px; 
+    height: 20px;
+    margin: 10px;
+    transition: transform 0.3s; 
+    margin-top: -50px;
+}
+
+
+.icones:hover {
+    transform: scale(1.2); 
+   
+}
+section button{
+    background-color:  #A2D5AB; ;
+    color: white;
+    border: none;
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.container {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #A2D5AB; 
+    margin-top: 30px;
+}
+
+.profile img {
+    border-radius: 50%; 
+    width: 250px; 
+    height: 250px; 
+}
+
+.about {
+    max-width: 600px; 
+    color: white;
+}
+
+.about h1, .about h2 {
+    margin: 0; 
+    text-align: center;
+}
+
+#about- Me {
+    font-size: 24px;
+}
+.about-Me{color: #B497BD;}
+.about h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #B497BD;
+}
+
+.about p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-section {
+    background:  #B497BD;
+    color: white;
+    padding: 50px 20px;
+  
+}
+
+#service-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlight {
+    color: #b4ffb4;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #6dc5a0; /* Initial background color */
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    transition: background 0.3s ease; 
+}
+
+.service-card:hover {
+    background: linear-gradient(#B497BD, #A2D5AB); 
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+.read-more {
+    display: inline-block;
+    background-color:#B497BD;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    background-color: #3a7d62;
+}
+
+.icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+#Contact{
+    text-align: center;
+    font-size: 24px;
+} 
+.Me{
+    color: #A2D5AB;
+}
+.Contact {
+    width: 100%;
+  max-width: 600px;
+    margin: 0 auto;
+}
+
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"]:last-child {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+}
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section img {
+        margin-left: 50%;
+        margin-top: -30%;
+        width: 150px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section img {
+        margin-left: 0;
+        margin-top: 10px;
+        display: block;
+        width: 120px;
+    }
+
+    .icones {
+        margin-top: 0;
+        width: 15px;
+        height: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+
+    .Contact {
+        width: 90%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    section h1, section h2 {
+        font-size: 18px;
+    }
+
+    .about h1, .about h2 {
+        font-size: 18px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Contact {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input {
+        padding: 5px;
+    }
+}
+footer {
+    background-color: #6d597a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #a2d5ab;
+}
+
+.footer-section .social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social a:hover {
+    color: #a2d5ab;
+}
+
+.footer-bottom {
+    background-color: #5a496a;
+    padding: 10px;
+    margin-top: 10px;
+}
